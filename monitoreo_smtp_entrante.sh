@@ -6,7 +6,7 @@ LOG="/var/log/monitoreo_smtp_entrante.log"
 ZIMBRA_LOG="/var/log/zimbra.log"
 BLACKLIST="/opt/script/listanegra.conf"
 WHITELIST_DOMINIOS="/opt/whitelist_dominios_entrantes.conf"
-ADMINS="soporte@13d06.mspz4.gob.ec,luis.zambrano@13d06.mspz4.gob.ec"
+ADMINS="xxx.xxxx@midominio.com,xxx.xxxx@midominio.com"
 
 UMBRAL_CONEXIONES=40
 SIMULACION=false
@@ -66,7 +66,7 @@ for IP in "${!CONEXIONES_IP[@]}"; do
 
         # Alerta Email
         {
-            echo "From: Soporte TICs <soporte@13d06.mspz4.gob.ec>"
+            echo "From: Soporte TICs <xxx.xxxx@midominio.com>"
             echo "To: $ADMINS"
             echo "Subject: [ALERTA] $ACCION IP SMTP: $IP"
             echo ""

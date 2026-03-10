@@ -11,7 +11,7 @@
  
 -LIMITE_ENVIO=100
 -VENTANA_MIN=10
--ADMINS="marlon.macias@13d06.mspz4.gob.ec,luis.zambrano@13d06.mspz4.gob.ec"
+-ADMINS="xxx.xxxx@midominio.com,xxx.xxxx@midominio.com"
 -SIMULACION=false
 +AUTOR="Luis Zambrano"
 +DB="${DB:-/opt/script/DBZIMBRA.DB}"
@@ -152,7 +152,7 @@
 -            sqlite3 "$DB" "INSERT INTO notificacion (fecha,evento,usuario) VALUES('$(date '+%Y-%m-%d %H:%M:%S')',2,'$U');"
 -
 -            {
--            echo "From: Soporte TICs <soporte@13d06.mspz4.gob.ec>"
+-            echo "From: Soporte TICs <xxx.xxxx@midominio.com>"
 -            echo "To: $ADMINS"
 -            echo "Subject: [ALERTA CRÍTICA] Bloqueo automático por spam"
 -            echo ""
@@ -172,7 +172,7 @@
 +            fi
 +
 +            if ! {
-+                echo "From: Soporte TICs <soporte@13d06.mspz4.gob.ec>"
++                echo "From: Soporte TICs <xxx.xxxx@midominio.com>"
 +                echo "To: $ADMINS"
 +                echo "Subject: [ALERTA CRÍTICA] Bloqueo automático por spam"
 +                echo ""
